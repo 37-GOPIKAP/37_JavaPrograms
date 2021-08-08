@@ -1,3 +1,4 @@
+//java program to print the details of n teachers, where Teacher is a subclass of Employee class.
 import java.util.Scanner;
 
 class Employee {
