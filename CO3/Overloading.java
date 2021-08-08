@@ -23,7 +23,7 @@ class Rectangle
         System.out.println("Area of the rectangle: " + l * w);
     }
 }
-public class Main
+public class Overloading
 {
     public static void main(String[] args)
     {
