@@ -13,7 +13,7 @@ class Circle
     {
         double A = Math.PI * r * r;
   
-        System.out.println("The area of the circle is :" + String.format("%.2f", A));
+        System.out.println("Area of the circle is :" + String.format("%.2f", A));
     }
 }
 class Rectangle 
@@ -27,11 +27,11 @@ public class Overloading
 {
     public static void main(String[] args)
     {
-        Rectangle obj = new Rectangle();
-        obj.Area(20,12);
-        Circle obj1 = new Circle();
-        obj1.Area(5);
-        Square obj2 = new Square();
-        obj2.Area(10);
+        Rectangle Shape = new Rectangle();
+        Shape.Area(20,12);
+        Circle Shape1 = new Circle();
+        Shape1.Area(5);
+        Square Shape2 = new Square();
+        Shape2.Area(10);
     }
 }
