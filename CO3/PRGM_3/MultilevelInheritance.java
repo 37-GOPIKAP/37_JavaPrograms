@@ -63,7 +63,7 @@ class Teacher extends Employee
 
 }
 
-public class MultilevelleInheritance
+public class MultilevelInheritance
 {
     public static void main(String[] args) 
     {
