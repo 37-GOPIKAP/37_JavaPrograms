@@ -26,12 +26,10 @@ class Rectangle
 public class Overloading
 {
     public static void main(String[] args)
-    {
-        Rectangle Shape = new Rectangle();
+    {	
+        Square Shape = new Shape();
         Shape.Area(20,12);
-        Circle Shape1 = new Circle();
-        Shape1.Area(5);
-        Square Shape2 = new Square();
-        Shape2.Area(10);
+        Shape.Area(5);
+        Shape.Area(10);
     }
 }
