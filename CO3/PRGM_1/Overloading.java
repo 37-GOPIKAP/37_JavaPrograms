@@ -1,23 +1,19 @@
-//Java program to find the area of different shapes using method overloading
-class Square 
+import java.util.Scanner;
+class Shapes 
 {
-    void Area(double a)
+    void Area(int a)
     {
         System.out.println("Area of the Square: "+ a * a);
     }
-}
-class Circle 
-{
+
   
-    void Area(double r)
+   void Area(double r)
     {
         double A = Math.PI * r * r;
   
         System.out.println("Area of the circle is :" + String.format("%.2f", A));
     }
-}
-class Rectangle 
-{
+
     void Area(double l, double w)
     {
         System.out.println("Area of the rectangle: " + l * w);
@@ -26,10 +22,22 @@ class Rectangle
 public class Overloading
 {
     public static void main(String[] args)
-    {	
-        Square Shape = new Shape();
-        Shape.Area(20,12);
-        Shape.Area(5);
-        Shape.Area(10);
+    {
+       Scanner sc=new Scanner(System.in);
+              float r,l,w;
+	      int sq;
+              Shapes s=new Shapes();
+              System.out.println("Enter the side of the Square:");
+              sq=sc.nextInt();
+              s.Area(sq);
+              System.out.println("Enter the sides of the Rectangle :");
+              System.out.println("Length:");
+              l=sc.nextFloat(); 
+              System.out.println("Width:");
+              w=sc.nextFloat();
+              s.Area(l,w); 
+              System.out.println("Enter the radius of the Circle  :");
+              r=sc.nextFloat();
+              s.Area(r); 
     }
 }
